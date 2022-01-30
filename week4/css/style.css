@@ -1,0 +1,48 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-size: 16px;
+  background-color: #0a1229;
+}
+
+p {
+  color: #f0de42;
+}
+
+h1 {
+  color: #2d9db9;
+}
+
+h2 {
+  color: #b9570b;
+}
+
+header,
+footer {
+  background-color: #6b0923;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  flex: 1;
+}
+
+a {
+  color: #56ddff;
+}
+
+/* Classes */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.alignBottom {
+  vertical-align: bottom;
+  margin: 16px
+}
