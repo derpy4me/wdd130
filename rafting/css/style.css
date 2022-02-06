@@ -1,0 +1,87 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
+
+/* Styles */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-size: 16px;
+  background-color: #0a1229;
+}
+
+section{
+  padding: 1rem;
+}
+
+main {
+  border-style: solid;
+  border-color: #6b0923;
+  border-top: none;
+  border-bottom: none;
+  border-width: 1px;
+}
+
+
+p {
+  color: #f0de42;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 125%;
+}
+
+h1 {
+  color: #2d9db9;
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+  color: #b9570b;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+header,
+footer {
+  background-color: #6b0923;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  flex: 1;
+}
+
+a {
+  color: #56ddff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+img {
+  box-shadow: 5px 5px 20px rgba(66, 66, 35);
+  margin: 1rem 1rem 1rem 0;
+}
+
+a img {
+  box-shadow: none;
+  margin: 0.5rem
+}
+
+/* Classes */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.alignBottom {
+  vertical-align: bottom;
+  margin: 16px
+}
+
+.hero {
+  width: 958px;
+  height: 246px;
+  box-shadow: none;
+  margin: 0;
+}
