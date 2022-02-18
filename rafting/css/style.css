@@ -1,5 +1,5 @@
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@500&display=swap');
 
 /* Styles */
 * {
@@ -32,13 +32,17 @@ p {
 }
 
 h1 {
-  color: #2d9db9;
+  color: #4accec;
   font-family: Bangers, Arial, Helvetica, sans-serif;
+  align-self: center;
+  justify-self: center;
+  font-size: 48px;
 }
 
 h2 {
   color: #9c4400;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 36px;
 }
 
 header,
@@ -49,7 +53,7 @@ footer {
 }
 
 header {
-  grid-template-columns: 160px 275px 1fr 300px;
+  grid-template-columns: 120px 1fr;
   align-items: baseline;
   padding: 8px 0 0 8px;
 }
@@ -66,22 +70,18 @@ footer {
   padding: 8px;
 }
 
-/* a {
-  color: #56ddff;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-} */
 
 img {
   box-shadow: 5px 5px 20px rgba(66, 66, 35);
   margin: 1rem 1rem 1rem 0;
 }
 
-/* Classes */
 a img{
   grid-column: 1/2;
   margin: 0;
   box-shadow: none;
 }
+/* Classes */
 
 .topNav {
   grid-column: 4/5;
@@ -125,25 +125,27 @@ a img{
 }
 
 .action {
-  background-color: #276372c0;
-  border: 1px solid #6b0512;
+  background-color: #0a1229c0;
+  border: 1px solid #460a12;
   position:absolute;
   top: 40px;
   left: 40px;
   padding: 1rem;
-  font-size: x-large;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-
+  
 }
 
-/* .action p {
-} */
+.action p{
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: rgb(187, 220, 247);
+}
 
 .action input {
-  color: #dfdfdf;
-  background-color: #460a12;
+  color: rgb(187, 220, 247);
+  background-color: #6b0512;
   padding: 0.3rem;
-  font-family: inherit;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: large;
   border: none;
 }
 
@@ -190,5 +192,10 @@ a img{
   align-items: center;
   justify-content: center;
   padding: 1rem 0 0;
+  width: 100%
+}
+
+.logo {
+  height: auto;
   width: 100%
 }
