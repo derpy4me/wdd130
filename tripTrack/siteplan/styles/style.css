@@ -11,7 +11,7 @@ Will play with and then clean up later.*/
 }
 
 body{
-    background-color: #422646;
+    background-color: #36454f;
     font-size: 16px;
     box-sizing: border-box;
     font-family: Helvetica, Arial, sans-serif;
@@ -20,8 +20,7 @@ body{
 h1{
     font-family: Shrikhand, cursive, Arial, Helvetica, sans-serif;
     padding: 1rem;
-    background-color: #0c271e;
-    color: #D8F3DC;
+    color: #f9f9f9;
 }
 
 dl {
@@ -49,15 +48,25 @@ p {
     line-height: 125% ;
 }
 
+header {
+    background-color: #15744f;
+}
+
+footer {
+    background-color: #15744f;
+    padding: 1rem;
+    color: #f9f9f9;
+}
+
 .colors {
-    border-style: 1px solid transparent;
+    border: 1px solid transparent;
     border-radius: 15px;
     padding: 1rem;
     background-color: #fff;
 }
 
 .page{
-    background-color: #D8F3DC;
+    background-color: #f9f9f9;
     max-width: 840px;
     margin: 0 auto;
 }
@@ -68,4 +77,9 @@ p {
 
 .titleFont{
     font-family: Anton, Arial, Helvetica, sans-serif;
+}
+
+.emphasis {
+    font-size: larger;
+    font-weight: bolder;
 }
