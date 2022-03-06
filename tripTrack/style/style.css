@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #36454f;
+  font-size: 16px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+header, footer {
+  background-color: #093f2a;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  color: #e6e600;
+}
+
+footer {
+  padding: 0.5rem 1rem;
+  color: #f9f9f9;
+}
+
+h1 {
+  font-family: Shrikhand, cursive, Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+h2, h3, h4 {
+  font-family: Anton, Arial, Helvetica, sans-serif;
+  color: #aa5a19;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: medium;
+}
+
+h4 {
+  font-size: small;
+}
+
+
+p {
+  line-height: 125%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-family: Anton, Arial, Helvetica, sans-serif;
+  color: #f9f9f9;
+}
+
+
+/* nav {
+  display: inline-flex;
+  align-content: center;
+} */
+
+header div nav a {
+  display: block;
+  padding: 0.5rem;
+}
+
+header div nav a:hover {
+  background-color: #15744f;
+  font-size: 20px;
+  padding: 0.25rem;
+  transition: 0.1s;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  align-items: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Classes */
+
+.page {
+  background-color: #f9f9f9;
+  max-width: 840px;
+  margin: 0 auto
+}
+
+.logo {
+  padding: 1rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.gridTwoEqual {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.gridThreeEqual {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gridSixEqual {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.gridTwoThirds {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.gridOneQuarter {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.5rem;
+}
+
+.columnSpanTwo {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.columnSpanThree {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.columnSpanSix {
+  grid-column: span 6;
+  width: 100%;
+}
+
+.noGap {
+  gap: 0px;
+}
+
+.borderRightAndLeft {
+  border: 1px solid #e6e600;
+  border-top: transparent;
+  border-bottom: transparent;
+}
+
+.borderBottom {
+  border: 1px solid #36454f;
+  border-right: transparent;
+  border-left: transparent;
+  border-top: transparent;
+}
+
+.borderRight {
+  border: 1px solid #36454f;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-left: transparent;
+}
+
+.borderTop {
+  border: 1px solid #e6e600;
+  border-right: transparent;
+  border-left: transparent;
+  border-bottom: transparent;
+}
+
+.borderLeft {
+  border: 1px solid #36454f;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.alerts p {
+  padding: 1rem;
+}
+
+.alerts li {
+  padding: 0.5rem;
+}
+
+.chartOne picture{
+  float: left;
+  margin-right: 1rem;
+}
+
+.chartTwo picture{
+  float: left;
+  margin-right: 1rem;
+}
+
+.chartThree picture {
+  float: left;
+  margin-right: 1rem;
+}
+
+.topPosts {
+  padding-bottom: 1rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #36454f;
+  transition: 0.3s;
+  max-height: 100px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 #36454f;
+}
+
+.cardContainer {
+  padding: 0.25rem;
+}
+
+.cardContainer p {
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.searchTopic {
+  position: relative;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.searchPostList {
+  white-space: nowrap;
+}
+
+.searchTopic span{
+  font-size: small;
+  margin-left: 0.5rem;
+}
+
+.searchBar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.topics {
+  padding: 1rem;
+}
+
+.topicLink {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.topics li {
+  padding: 0.2rem;
+}
+
+.hero {
+  margin: -1rem -1rem 0;
+}
+
+.contentTitle {
+  padding-bottom: 1rem;
+}
+
+.niceImages {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.finishImage {
+  height: 250px;
+  width: 840px;
+  margin-bottom: -1rem;
+  margin-left: -1rem;
+  background: linear-gradient(0deg, transparent 65%, #f9f9f9 95%), url("https://via.placeholder.com/840x250?text=Finish+Image");
+}
