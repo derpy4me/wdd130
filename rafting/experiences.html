@@ -29,54 +29,100 @@
         <div class="gridTwoEqual">
           <div class="reviewCards spanTwo">
             <h2 class="spanThree">Top Reviews</h2>
+            <a href="#">
+              <div class="card">
+                <div class="additional">
+                  <picture>
+                    <img src="images/jane_doe1.jpg" alt="placeholder"
+                  /></picture>
+                </div>
+                <div class="cardContent">
+                  <h2>Jane Doe</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </a>
             <div class="card">
-              <picture>
-                <img src="https://via.placeholder.com/50" alt="placeholder"
-              /></picture>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="additional">
+                <picture>
+                  <img src="images/john_doe1.jpg" alt="placeholder"
+                /></picture>
+              </div>
+              <div class="cardContent">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
             <div class="card">
-              <picture>
-                <img src="https://via.placeholder.com/50" alt="placeholder"
-              /></picture>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="additional">
+                <picture>
+                  <img src="images/jane_doe2.jpg" alt="placeholder"
+                /></picture>
+              </div>
+              <div class="cardContent">
+                <h2>Jane Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
             <div class="card">
-              <picture>
-                <img src="https://via.placeholder.com/50" alt="placeholder"
-              /></picture>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="additional">
+                <picture>
+                  <img src="images/john_doe2.jpg" alt="placeholder"
+                /></picture>
+              </div>
+              <div class="cardContent">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
             <div class="card">
-              <picture>
-                <img src="https://via.placeholder.com/50" alt="placeholder"
-              /></picture>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="additional">
+                <picture>
+                  <img src="images/jane_doe3.jpg" alt="placeholder"
+                /></picture>
+              </div>
+              <div class="cardContent">
+                <h2>Jane Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
             <div class="card">
-              <picture>
-                <img src="https://via.placeholder.com/50" alt="placeholder"
-              /></picture>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="card">
-              <picture>
-                <img src="https://via.placeholder.com/50" alt="placeholder"
-              /></picture>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="additional">
+                <picture>
+                  <img src="images/john_doe3.jpg" alt="placeholder"
+                /></picture>
+              </div>
+              <div class="cardContent">
+                <h2>John Doe</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
             </div>
           </div>
           <div class="leaveReview">
             <h2 class="spanTwo childHeader">Leave A Review</h2>
-            <div class="Rating" aria-label="Rating of this item is 3 out of 5">
-              <img src="images/star.png" class="ratingStar">
-              <img src="images/star.png" class="ratingStar">
-              <img src="images/star.png" class="ratingStar">
-              <img src="images/star.png" class="ratingStar">
-              <img src="images/star.png" class="ratingStar">
+            <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-half"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
             </div>
-            <label for="name">Name</label><input type="text" name="name" id="name">
-            <label for="name">Email</label><input type="text" name="email" id="email">
+            <label for="name" class="title">Name</label
+            ><input type="text" name="name" id="name" class="reviewInput" />
+            <label for="name" class="title">Email</label
+            ><input type="text" name="email" id="email" class="reviewInput" />
+            <label for="review" class="title">Review</label>
+            <form>
+              <textarea
+                type="text"
+                name="review"
+                id="review"
+                class="reviewInput textArea"
+              ></textarea>
+            </form>
+            <div class="submitButton title">Submit</div>
           </div>
           <div class="callNow">
             <h2 class="childHeader">Interested</h2>
@@ -100,5 +146,13 @@
         </nav>
       </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

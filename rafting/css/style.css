@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-  color: #9c4400;
+  color: #c94406;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 36px;
 }
@@ -47,7 +47,7 @@ h2 {
 header,
 footer {
   background-color: #6b0512;
-  color: #2d9db9;
+  color: #5dd0ec;
   display: grid;
 }
 
@@ -67,6 +67,11 @@ footer {
   grid-template-columns: 350px 1fr 200px;
   align-items: center;
   padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
 }
 
 a img {
@@ -97,14 +102,14 @@ a img {
 }
 
 .topNav a:hover {
-  color: #2d9db9;
-  border: 1px solid #2d9db9;
+  color: #5dd0ec;
+  border: 1px solid #5dd0ec;
 }
 
 .page {
   max-width: 960px;
   margin: 0 auto;
-  background-color: rgb(187, 220, 247);
+  background-color: #d5ebff;
 }
 
 .hero {
@@ -135,6 +140,10 @@ a img {
   font-family: Bangers, Arial, Helvetica, sans-serif;
   font-size: 40px;
   color: rgb(187, 220, 247);
+}
+
+.action input {
+  cursor: pointer;
 }
 
 .action input {
@@ -207,9 +216,9 @@ a img {
 .reviewCards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 0.75rem 1.5rem;
+  gap: 2rem 2rem;
   justify-items: center;
-  margin: 1rem;
+  margin: 1rem 2rem 3rem;
 }
 
 .spanThree {
@@ -228,17 +237,51 @@ a img {
   grid-column: 2 / span 1;
 }
 
-.reviewCards div:nth-child(2n) {
-  background-color: rgb(217, 255, 159);
-}
-
-.reviewCards div:nth-child(2n + 1) {
-  background-color: #ffc2fa;
-}
-
 .leaveReview {
-  padding: 1rem;
-  border-style: solid;
+  padding: 1rem 2rem 2rem;
+  border: 1px solid #0a1229;
+  border-bottom: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.reviewInput {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem;
+  color: inherit;
+  width: 75%;
+  height: 24px;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+.reviewInput:focus {
+  outline: none;
+  box-shadow: 0.2rem 0.8rem 1.6rem #2d5f6b;
+}
+
+.submitButton {
+  width: 30%;
+  height: 32px;
+  background: #6b0512;
+  color: #eef7ff;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.25rem;
+  margin-top: 1rem;
+}
+
+.textArea {
+  height: 150px;
+  resize: none;
+  line-height: 1rem;
+}
+
+.rating {
+  margin: 0.5rem 0 0.25rem;
+  font-size: larger;
 }
 
 .childHeader {
@@ -246,28 +289,57 @@ a img {
   justify-self: center;
 }
 
+.title {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
 .callNow {
   padding: 1rem;
-  border-style: solid;
+  border: 1px solid #0a1229;
+  border-bottom: transparent;
+  border-right: transparent;
 }
 
 .card {
   display: grid;
-  grid-template-columns: 50px 1fr;
-  padding: 0.5rem;
+  grid-template-columns: 66px 1fr;
   border-radius: 10px;
   text-align: justify;
-  background: linear-gradient(#fff0 0%, #fff0 80%, #1d1d1d 100%);
+  background: linear-gradient(#f8f8f8, #fff);
+  background-color: rgb(236, 236, 236);
+  box-shadow: 0 8px 16px -8px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.card p {
+.card h2 {
+  font-size: 18px;
+}
+
+.cardContent {
+  padding: 0.5rem;
+}
+
+.card .additional {
+  background-color: #dadada;
+  position: relative;
+}
+
+.card .additional picture {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   padding-left: 0.5rem;
 }
 
-.ratingStar {
-  filter: grayscale(100%);
-  opacity: 0.3;
-  width: 5%;
+.card .additional picture img{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 }
 
 /* Contact Classes */
