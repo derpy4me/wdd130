@@ -250,7 +250,7 @@ a img {
   margin-bottom: 1rem;
   padding: 1rem 0.5rem;
   color: inherit;
-  width: 75%;
+  width: 100%;
   height: 24px;
   border: none;
   border-radius: 0.4rem;
@@ -274,7 +274,7 @@ a img {
 }
 
 .textArea {
-  height: 150px;
+  height: 250px;
   resize: none;
   line-height: 1rem;
 }
@@ -295,10 +295,22 @@ a img {
 }
 
 .callNow {
-  padding: 1rem;
+  padding: 1rem 2rem 2rem;
   border: 1px solid #0a1229;
   border-bottom: transparent;
   border-right: transparent;
+}
+
+.callBody {
+  padding: 1rem 0;
+}
+
+.callButton {
+  background: #6b0512;
+}
+
+.centerText {
+  text-align: center;
 }
 
 .card {
@@ -307,13 +319,41 @@ a img {
   border-radius: 10px;
   text-align: justify;
   background: linear-gradient(#f8f8f8, #fff);
-  background-color: rgb(236, 236, 236);
+  background-color: #ececec;
   box-shadow: 0 8px 16px -8px;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-.card h2 {
+.callCard {
+  border-radius: 10px;
+  text-align: center;
+  background: linear-gradient(#f8f8f8, #fff);
+  background-color: #ececec;
+  box-shadow: 0 8px 16px -8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.callCard:hover {
+  box-shadow: 0.2rem 0.8rem 1.6rem #2d5f6b;
+  transform: scale(1.01);
+}
+
+.card:hover {
+  box-shadow: 0.2rem 0.8rem 1.6rem #2d5f6b;
+  transform: scale(1.01);
+}
+
+.callCard img {
+  object-fit: cover;
+  width: 100%;
+  height: 75%;
+}
+
+.cardHeader {
   font-size: 18px;
 }
 
@@ -335,7 +375,7 @@ a img {
   padding-left: 0.5rem;
 }
 
-.card .additional picture img{
+.card .additional picture img {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -351,14 +391,61 @@ a img {
   padding: 1rem;
 }
 
+.gridMoreRight {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  padding: 1rem;
+}
+
 .rowSpanTwo {
   grid-row-end: span 2;
+}
+
+.rowSpanThree {
+  grid-row-end: span 3;
+}
+
+.rowStartOne {
+  grid-row-start: 1;
 }
 
 .rowStartTwo {
   grid-row-start: 2;
 }
 
+.rowStartThree {
+  grid-row-start: 3;
+}
+
 .centerItems {
   justify-items: center;
+}
+
+.remMarginLeft {
+  margin-left: 0.5rem;
+}
+
+.remMarginRight {
+  margin-right: 0.5rem;
+}
+
+.staffImage {
+  width: 410px;
+  padding-left: 0;
+}
+
+.calendar {
+  max-width: 500px;
+  max-height: 150px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.calendar img {
+  width: 500px;
+  object-fit: cover;
+}
+
+.widthThreeQuarter {
+  width: 75%;
 }
