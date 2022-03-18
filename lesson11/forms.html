@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A basic tutorial and tweaking of a form"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Form Tutorial</title>
+  </head>
+  <body>
+    <header>
+      <h1>Basic Form</h1>
+    </header>
+    <main>
+      <form action="">
+        <ul>
+          <li>
+            <label for="name">Name:</label
+            ><input type="text" id="name" name="user_name" required/>
+          </li>
+          <li>
+            <label for="mail">E-mail:</label
+            ><input type="mail" id="mail" name="user_email" required/>
+          </li>
+          <li>
+            <label for="msg">Message:</label
+            ><textarea id="msg" name="user_message" placeholder="Please leave a message." required></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form>
+    </main>
+    <footer>
+      <p>Thomas Scott Mar 17, 2022</p>
+    </footer>
+  </body>
+</html>
