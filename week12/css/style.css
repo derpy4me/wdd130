@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+h1 {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+}
+
+.card {
+  background: #0000ff15;
+  box-shadow: 32px 32px 96px 12px;
+  padding: 1.5rem;
+  width: 400px;
+  height: 500px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.card:hover {
+  background: #0000ff15;
+  box-shadow: 24px 24px 64px 12px;
+  transform: scale(1.01);
+}
+
+.card img {
+  width: 352px;
+  border-radius: 20px;
+}
+
+.title {
+  margin: 1rem;
+}
+
+.details {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.details a {
+  background: #33337269;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.details a:hover {
+  background: #202055;
+  border: 1px solid white;
+  color: white
+}
+
+.details p{
+  text-align: left;
+  padding-top: 1rem;
+  font-variant: common-ligatures tabular-nums small-caps;
+  font-size: 12px;
+}
+
+.templeImage {
+  position: relative;
+}
+
+.templeImage ion-icon {
+  font-size: x-large;
+  color: red;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  transition: font-size 0.2s ease-in
+}
+
+.templeImage ion-icon:hover {
+  font-size: xx-large;
+}
